@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d1831c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="containerss">
+            <nav>
+                <img src="/image/download.jfif" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="/calculator.html">calculator</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+    <div class="container">
+        <div class="calculator">
+           <form>
+               <div class="display">
+                   <input type="text" name="display">
+               </div>
+               <div>
+                   <input type="button" value="Clear" onclick=" display.value ='' " class="operators">
+                   <input type="button" value="Delete" onclick=" display.value =display.value.toString().slice(0,-1)" class="operators" >
+                   <input type="button" value="." onclick=" display.value +='.' " class="operator">
+                   <input type="button" value="/" onclick=" display.value +='/' " class="operator">
+               </div>
+               <div>
+                   <input type="button" value="7" onclick=" display.value +='7' " class="pointer">
+                   <input type="button" value="8" onclick=" display.value +='8' " class="pointer">
+                   <input type="button" value="9" onclick=" display.value +='9' " class="pointer">
+                   <input type="button" value="*" onclick=" display.value +='*' " class="operator">
+               </div>
+               <div>
+                   <input type="button" value="4" onclick=" display.value +='4' " class="pointer">
+                   <input type="button" value="5" onclick=" display.value +='5' " class="pointer">
+                   <input type="button" value="6" onclick=" display.value +='6' " class="pointer">
+                   <input type="button" value="-" onclick=" display.value +='-' " class="operator">
+               </div>
+               <div>
+                   <input type="button" value="1" onclick=" display.value +='1' " class="pointer">
+                   <input type="button" value="2" onclick=" display.value +='2' " class="pointer">
+                   <input type="button" value="3" onclick=" display.value +='3' " class="pointer">
+                   <input type="button" value="+" onclick=" display.value +='+' " class="operator">
+               </div>
+               <div>
+                   <input type="button" value="00" onclick=" display.value +='00'" class="boides">
+                   <input type="button" value="0" onclick=" display.value +='0' " class="boides">
+                   <input type="button" value="=" onclick=" display.value =eval(display.value) " class="equal operator"  >
+               </div>
+           </form>
+           
+        </div>
+       </div>
+    </div>
+</div>
+</body>
+</html>
